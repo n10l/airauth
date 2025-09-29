@@ -1,0 +1,58 @@
+{
+  "name": "@airauth/monorepo",
+  "private": true,
+  "description": "Modern, TypeScript-first authentication library for Next.js and React Router V7",
+  "author": "n10l",
+  "license": "MIT",
+  "homepage": "https://airauth.dev",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/n10l/airauth"
+  },
+  "scripts": {
+    "build": "turbo build",
+    "dev": "turbo dev",
+    "test": "turbo test",
+    "test:watch": "turbo test:watch",
+    "test:coverage": "turbo test:coverage",
+    "lint": "turbo lint",
+    "lint:fix": "turbo lint:fix",
+    "type-check": "turbo type-check",
+    "validate": "turbo validate",
+    "clean": "turbo clean && rm -rf node_modules",
+    "clean:all": "turbo clean && rm -rf node_modules **/node_modules",
+    "ci": "turbo validate --cache-dir=.turbo",
+    "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json,md}\"",
+    "format:check": "prettier --check \"**/*.{ts,tsx,js,jsx,json,md}\"",
+    "changeset": "changeset",
+    "version-packages": "changeset version",
+    "release": "turbo build && changeset publish",
+    "graph": "turbo graph"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.27.11",
+    "@tailwindcss/postcss": "^4.1.13",
+    "@typescript-eslint/eslint-plugin": "^8.44.1",
+    "@typescript-eslint/parser": "^8.44.1",
+    "eslint": "^8.57.1",
+    "eslint-config-prettier": "^9.1.2",
+    "eslint-plugin-import": "^2.32.0",
+    "eslint-plugin-jsx-a11y": "^6.10.2",
+    "eslint-plugin-prettier": "^5.2.1",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "^5.1.0",
+    "prettier": "^3.4.2",
+    "turbo": "^2.5.0",
+    "typescript": "^5.8.0"
+  },
+  "packageManager": "pnpm@8.15.1",
+  "workspaces": [
+    "packages/*",
+    "apps/*",
+    "examples/*"
+  ],
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  }
+}

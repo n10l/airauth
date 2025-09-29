@@ -1,0 +1,93 @@
+import { NextResponse } from 'next/server'
+import type { NextRequest } from 'next/server'
+import { withAuth } from '@airauth/next/middleware'
+
+export default withAuth(
+  // middleware function
+  function middleware(req: NextRequest) {
+    // Add custom middleware logic here if needed
+
+    // Example: Redirect admin routes to login if not admin
+    if (req.nextUrl.pathname.startsWith('/admin')) {
+      const token = req.nextauth.token
+      if (token?.role !== 'admin') {
+        return NextResponse.redirect(new URL('/auth/signin', req.url))
+      }
+    }
+
+    // Example: Add custom headers
+    const response = NextResponse.next()
+    response.headers.set('x-pathname', req.nextUrl.pathname)
+
+    return response
+  },
+  {
+    callbacks: {
+      authorized: ({ token, req }) => {
+        // Define which routes require authentication
+        const { pathname } = req.nextUrl
+
+        // Public routes that don't require authentication
+        const publicRoutes = [
+          '/',
+          '/auth/signin',
+          '/auth/signup',
+          '/auth/error',
+          '/api/auth',
+        ]
+
+        // Check if the current path is a public route
+        const isPublicRoute = publicRoutes.some(route =>
+          pathname.startsWith(route)
+        )
+
+        // Always allow access to auth API routes
+        if (pathname.startsWith('/api/auth/')) {
+          return true
+        }
+
+        // Allow access to public routes
+        if (isPublicRoute) {
+          return true
+        }
+
+        // For protected routes, require authentication
+        if (pathname.startsWith('/dashboard') ||
+            pathname.startsWith('/profile') ||
+            pathname.startsWith('/admin')) {
+          return !!token
+        }
+
+        // Default: allow access (you can change this to false for strict mode)
+        return true
+      },
+    },
+  }
+)
+
+export const config = {
+  // Specify which routes this middleware should run on
+  matcher: [
+    /*
+     * Match all request paths except for the ones starting with:
+     * - api (API routes that don't need auth - except auth routes which are handled above)
+     * - _next/static (static files)
+     * - _next/image (image optimization files)
+     * - favicon.ico (favicon file)
+     * - public folder
+     */
+    '/((?!api|_next/static|_next/image|favicon.ico|public).*)',
+  ],
+}
+
+// Alternative configuration for more specific route matching:
+/*
+export const config = {
+  matcher: [
+    '/dashboard/:path*',
+    '/profile/:path*',
+    '/admin/:path*',
+    '/api/protected/:path*',
+  ]
+}
+*/

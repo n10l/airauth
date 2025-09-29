@@ -1,0 +1,59 @@
+{
+  "name": "@airauth/adapter-prisma",
+  "version": "1.0.0-beta.0",
+  "description": "Prisma adapter for @airauth/core",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.cjs",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist/**",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "type-check": "tsc --noEmit",
+    "clean": "rm -rf dist"
+  },
+  "keywords": [
+    "airauth",
+    "prisma",
+    "adapter",
+    "authentication",
+    "database"
+  ],
+  "author": "n10l",
+  "license": "MIT",
+  "homepage": "https://airauth.dev",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/n10l/airauth",
+    "directory": "packages/adapter-prisma"
+  },
+  "bugs": {
+    "url": "https://github.com/n10l/airauth/issues"
+  },
+  "peerDependencies": {
+    "@airauth/core": "workspace:*",
+    "@prisma/client": ">=4.0.0"
+  },
+  "devDependencies": {
+    "@airauth/core": "workspace:*",
+    "@prisma/client": "^5.0.0",
+    "@types/node": "^20.10.6",
+    "prisma": "^5.0.0",
+    "tsup": "^8.0.1",
+    "typescript": "^5.3.3",
+    "vitest": "^1.1.0"
+  }
+}

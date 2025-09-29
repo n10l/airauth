@@ -1,0 +1,120 @@
+{
+  "name": "@airauth/core",
+  "version": "1.0.0-beta.0",
+  "description": "Core authentication library for AirAuth - Modern, TypeScript-first authentication",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./react": {
+      "types": "./dist/react/index.d.ts",
+      "import": "./dist/react/index.mjs",
+      "require": "./dist/react/index.js"
+    },
+    "./next": {
+      "types": "./dist/next/index.d.ts",
+      "import": "./dist/next/index.mjs",
+      "require": "./dist/next/index.js"
+    },
+    "./adapters": {
+      "types": "./dist/adapters/index.d.ts",
+      "import": "./dist/adapters/index.mjs",
+      "require": "./dist/adapters/index.js"
+    },
+    "./providers": {
+      "types": "./dist/providers/index.d.ts",
+      "import": "./dist/providers/index.mjs",
+      "require": "./dist/providers/index.js"
+    }
+  },
+  "files": [
+    "dist/**",
+    "README.md",
+    "CHANGELOG.md"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "lint": "eslint src --ext .ts,.tsx",
+    "lint:fix": "eslint src --ext .ts,.tsx --fix",
+    "format": "prettier --write \"src/**/*.{ts,tsx,js,jsx,json,md}\"",
+    "format:check": "prettier --check \"src/**/*.{ts,tsx,js,jsx,json,md}\"",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "test:ui": "vitest --ui",
+    "type-check": "tsc --noEmit",
+    "clean": "rm -rf dist coverage",
+    "check": "npm run format:check && npm run test",
+    "fix": "npm run format && npm run test",
+    "quality": "npm run format && npm run test:coverage",
+    "ci": "npm run format:check && npm run test:coverage",
+    "check-all": "npm run type-check && npm run format:check && npm run test",
+    "fix-all": "npm run format && npm run test && echo 'Note: TypeScript errors may remain - run type-check to see them'",
+    "validate": "npm run format && npm run test && npm run type-check"
+  },
+  "keywords": [
+    "airauth",
+    "authentication",
+    "auth",
+    "oauth",
+    "typescript",
+    "react",
+    "nextjs",
+    "session",
+    "jwt",
+    "security"
+  ],
+  "author": "n10l",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/n10l/airauth",
+    "directory": "packages/core"
+  },
+  "bugs": {
+    "url": "https://github.com/n10l/airauth/issues"
+  },
+  "homepage": "https://airauth.dev",
+  "peerDependencies": {
+    "next": ">=14.0.0",
+    "react": ">=18.0.0",
+    "react-dom": ">=18.0.0"
+  },
+  "dependencies": {
+    "@types/cookie": "^0.6.0",
+    "argon2": "^0.31.2",
+    "cookie": "^0.6.0",
+    "jose": "^5.2.0",
+    "nanoid": "^5.0.4",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^6.1.5",
+    "@testing-library/react": "^14.1.2",
+    "@testing-library/user-event": "^14.5.1",
+    "@types/node": "^20.10.6",
+    "@types/react": "^18.2.46",
+    "@types/react-dom": "^18.2.18",
+    "@typescript-eslint/eslint-plugin": "^8.44.1",
+    "@typescript-eslint/parser": "^8.44.1",
+    "@vitejs/plugin-react": "^4.2.1",
+    "eslint": "^8.56.0",
+    "jsdom": "^23.0.1",
+    "next": "^15.5.4",
+    "prettier": "^3.1.1",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "tsup": "^8.5.0",
+    "typescript": "^5.8.0",
+    "vitest": "^3.2.4",
+    "@vitest/coverage-v8": "^3.2.4",
+    "@vitest/ui": "^3.2.4"
+  }
+}

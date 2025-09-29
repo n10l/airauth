@@ -1,0 +1,63 @@
+{
+  "name": "@airauth/react",
+  "version": "1.0.0-beta.0",
+  "description": "React hooks and components for AirAuth",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist/**",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "type-check": "tsc --noEmit",
+    "clean": "rm -rf dist"
+  },
+  "keywords": [
+    "airauth",
+    "react",
+    "hooks",
+    "authentication",
+    "auth"
+  ],
+  "author": "n10l",
+  "license": "MIT",
+  "homepage": "https://airauth.dev",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/n10l/airauth",
+    "directory": "packages/react"
+  },
+  "bugs": {
+    "url": "https://github.com/n10l/airauth/issues"
+  },
+  "peerDependencies": {
+    "@airauth/core": "workspace:*",
+    "react": ">=18.0.0",
+    "react-dom": ">=18.0.0"
+  },
+  "devDependencies": {
+    "@airauth/core": "workspace:*",
+    "@testing-library/react": "^14.1.2",
+    "@testing-library/react-hooks": "^8.0.1",
+    "@types/react": "^18.2.46",
+    "@types/react-dom": "^18.2.18",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "tsup": "^8.0.1",
+    "typescript": "^5.3.3",
+    "vitest": "^1.1.0"
+  }
+}
