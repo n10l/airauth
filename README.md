@@ -1,3 +1,36 @@
+<div align="left">
+
+<img src="https://img.shields.io/badge/PROJECT_STATUS-DISCONTINUED-red?style=for-the-badge" />
+
+🚀 Something BIGGER is coming!
+
+AirAuth is officially discontinued as we shift our entire focus toward building a next-generation, proprietary, enterprise-grade frontend ecosystem.
+
+Our mission is to reinvent frontend engineering.
+
+We're building a better way to architect, develop, and scale highly complex frontend applications through world-class engineering practices, scalable architecture, and developer-first innovation.
+
+🌍 More Opportunities: Bringing frontend opportunities back to the market and empowering developers.
+🏗️ Better Engineering: Redefining how large-scale frontend systems are designed and built.
+🤝 Shared Success: Creating a place where developers, contributors, innovators, and businesses can grow and succeed together.
+
+🔥 LAUNCHING THIS WEEK. STAY TUNED!
+
+The future of frontend engineering is being built, and there's a place for everyone in this ecosystem. ❤️
+
+</div>
+
+<div align="left">
+
+⬇️ ARCHIVED PROJECT DOCUMENTATION
+
+The original AirAuth documentation is preserved below for reference.
+
+</div>
+
+<!-- ORIGINAL AIRAUTH DOCUMENTATION STARTS HERE -->
+---
+
 # AirAuth 🔐
 
 Modern, TypeScript-first authentication library for Next.js (Beta) and React Router V7 (Upcoming).
