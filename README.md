@@ -11,7 +11,9 @@ Our mission is to reinvent frontend engineering.
 We're building a better way to architect, develop, and scale highly complex frontend applications through world-class engineering practices, scalable architecture, and developer-first innovation.
 
 🌍 More Opportunities: Bringing frontend opportunities back to the market and empowering developers.
+
 🏗️ Better Engineering: Redefining how large-scale frontend systems are designed and built.
+
 🤝 Shared Success: Creating a place where developers, contributors, innovators, and businesses can grow and succeed together.
 
 🔥 LAUNCHING THIS WEEK. STAY TUNED!
