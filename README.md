@@ -1,3 +1,33 @@
+[!IMPORTANT]
+🚀 AirAuth is evolving into something much bigger!
+
+We're officially moving beyond AirAuth to build something ambitious: a next-generation, enterprise-grade frontend ecosystem.
+
+Our mission? To redefine how the frontend industry builds, scales, and innovates.
+
+We're building an ecosystem focused on:
+
+🏗️ Engineering at Scale: Reinventing how we architect and build highly complex, large-scale frontend applications.
+💎 Engineering Excellence: Bringing industry-leading practices, robust architecture, performance, security, and maintainability to the forefront.
+🌍 More Opportunities for Everyone: Creating an ecosystem that helps bring frontend opportunities back to the market, empowers developers, and opens new doors for talent.
+🤝 Shared Success: Building a place where developers, contributors, innovators, and businesses all have an opportunity to grow and succeed together.
+
+We believe the future of frontend engineering deserves something better. Not just another framework, library, or boilerplate, but an entire ecosystem built for the next generation of software.
+
+AirAuth will no longer receive active development as we shift our focus entirely toward this vision.
+
+🔥 Something BIG is coming.
+
+We're working hard behind the scenes, and we're excited to bring you along on this journey.
+
+Launching this week. Stay tuned!
+
+The next chapter of frontend engineering starts here.
+
+There will be a place for everyone in this ecosystem. Let's build the future together. ❤️
+
+---
+
 # AirAuth 🔐
 
 Modern, TypeScript-first authentication library for Next.js (Beta) and React Router V7 (Upcoming).
