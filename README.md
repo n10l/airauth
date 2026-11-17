@@ -1,31 +1,34 @@
-[!IMPORTANT]
-🚀 AirAuth is evolving into something much bigger!
+<div align="left">
 
-We're officially moving beyond AirAuth to build something ambitious: a next-generation, enterprise-grade frontend ecosystem.
+<img src="https://img.shields.io/badge/PROJECT_STATUS-DISCONTINUED-red?style=for-the-badge" />
 
-Our mission? To redefine how the frontend industry builds, scales, and innovates.
+🚀 Something BIGGER is coming!
 
-We're building an ecosystem focused on:
+AirAuth is officially discontinued as we shift our entire focus toward building a next-generation, proprietary, enterprise-grade frontend ecosystem.
 
-🏗️ Engineering at Scale: Reinventing how we architect and build highly complex, large-scale frontend applications.
-💎 Engineering Excellence: Bringing industry-leading practices, robust architecture, performance, security, and maintainability to the forefront.
-🌍 More Opportunities for Everyone: Creating an ecosystem that helps bring frontend opportunities back to the market, empowers developers, and opens new doors for talent.
-🤝 Shared Success: Building a place where developers, contributors, innovators, and businesses all have an opportunity to grow and succeed together.
+Our mission is to reinvent frontend engineering.
 
-We believe the future of frontend engineering deserves something better. Not just another framework, library, or boilerplate, but an entire ecosystem built for the next generation of software.
+We're building a better way to architect, develop, and scale highly complex frontend applications through world-class engineering practices, scalable architecture, and developer-first innovation.
 
-AirAuth will no longer receive active development as we shift our focus entirely toward this vision.
+🌍 More Opportunities: Bringing frontend opportunities back to the market and empowering developers.
+🏗️ Better Engineering: Redefining how large-scale frontend systems are designed and built.
+🤝 Shared Success: Creating a place where developers, contributors, innovators, and businesses can grow and succeed together.
 
-🔥 Something BIG is coming.
+🔥 LAUNCHING THIS WEEK. STAY TUNED!
 
-We're working hard behind the scenes, and we're excited to bring you along on this journey.
+The future of frontend engineering is being built, and there's a place for everyone in this ecosystem. ❤️
 
-Launching this week. Stay tuned!
+</div>
 
-The next chapter of frontend engineering starts here.
+<div align="left">
 
-There will be a place for everyone in this ecosystem. Let's build the future together. ❤️
+⬇️ ARCHIVED PROJECT DOCUMENTATION
 
+The original AirAuth documentation is preserved below for reference.
+
+</div>
+
+<!-- ORIGINAL AIRAUTH DOCUMENTATION STARTS HERE -->
 ---
 
 # AirAuth 🔐
